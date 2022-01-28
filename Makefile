@@ -5,5 +5,4 @@ brain-games:
 publish:
 	npm publish --dry-run
 lint:
-	npm install eslint
 	npx eslint .
