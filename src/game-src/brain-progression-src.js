@@ -12,6 +12,10 @@ const brainProgression = () => {
   }
   const correctAnswer = arr[miss];
   arr[miss] = '..';
-  return [arr, correctAnswer];
+  let question = `${arr[0]}`;
+for (let d = 1; d < arr.length; d += 1) {
+  question = `${question} ${arr[d]}`;
+}
+  return [question, correctAnswer];
 };
 export default brainProgression;
