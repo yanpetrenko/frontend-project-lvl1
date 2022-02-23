@@ -2,8 +2,8 @@
 /* eslint-disable linebreak-style */
 
 const brainGcd = () => {
-  const first = Math.floor(Math.random() * 100) +25;
-  const second = Math.floor(Math.random() * 100) +25;
+  const first = Math.floor(Math.random() * 100) + 25;
+  const second = Math.floor(Math.random() * 100) + 25;
   const question = `${first} ${second}`;
   let correctAnswer;
   for (let i = 25; i > 0; i -= 1) {

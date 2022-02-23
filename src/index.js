@@ -8,7 +8,7 @@ const check = (func, rules) => {
     const [question, correctAnswer] = func();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer == correctAnswer) {
+    if (answer === correctAnswer) {
       console.log('Correct!');
       if (i === 2) {
         console.log(`Congratulations, ${username}!`);
