@@ -13,11 +13,12 @@ const check = (func, rules) => {
       if (i === 2) {
         console.log(`Congratulations, ${username}!`);
       }
-      continue;
     }
-    console.log(`'${answer}' is wrong answer; Correct answer was '${correctAnswer}'`);
-    console.log(`Let's try again, ${username}!`);
-    break;
+    if (answer !== correctAnswer) {
+      console.log(`'${answer}' is wrong answer; Correct answer was '${correctAnswer}'`);
+      console.log(`Let's try again, ${username}!`);
+      break;
+    }
   }
 };
 export default check;
