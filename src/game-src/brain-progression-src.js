@@ -15,6 +15,6 @@ const brainProgression = () => {
   for (let d = 1; d < arr.length; d += 1) {
     question = `${question} ${arr[d]}`;
   }
-  return [question, correctAnswer];
+  return [question, String(correctAnswer)];
 };
 export default brainProgression;
